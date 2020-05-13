@@ -13,6 +13,11 @@ matrix:
       name: "verify-dependencies"
       script:
         - make verify-dependencies
+    - go: 1.14.x
+      arch: arm64
+      name: "verify-dependencies"
+      script:
+        - make verify-dependencies
     - go: 1.13.x
       name: "cgroup-systemd"
       env:
